@@ -1,75 +1,72 @@
-# React + TypeScript + Vite
+# Volt Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Volt Project is a modern React + Vite web application designed for rapid development and easy deployment. It features a modular structure with reusable components, configuration-driven navigation, and clean layouts for scalable web projects.
 
-Currently, two official plugins are available:
+## Features
+- Built with React, Vite, and TypeScript
+- Modular folder structure for easy maintenance
+- Reusable UI components (Button, Navbar, Footer, Service Card)
+- Config-driven navigation and content
+- Ready-to-use pages: Home, About Us, Services, Case Studies, Contact
+- Asset management for images and static files
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Getting Started
 
-## React Compiler
+### Prerequisites
+- [Node.js](https://nodejs.org/) (v16 or higher recommended)
+- [npm](https://www.npmjs.com/) (comes with Node.js)
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+### Installation
+1. **Clone the repository:**
+   ```sh
+   git clone https://github.com/your-username/volt-project.git
+   cd volt-project
+   ```
+2. **Install dependencies:**
+   ```sh
+   npm install
+   ```
 
-Note: This will impact Vite dev & build performances.
+### Running the Development Server
+Start the app locally:
+```sh
+npm run dev
+```
+Open [http://localhost:5173](http://localhost:5173) in your browser to view the app.
 
-## Expanding the ESLint configuration
+### Building for Production
+To build the app for production:
+```sh
+npm run build
+```
+The output will be in the `dist/` folder.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### Project Structure
+```
+volt-project/
+├── public/              # Static assets
+├── src/                 # Source code
+│   ├── assets/          # Images and media
+│   ├── component/       # Reusable UI components
+│   ├── config/          # Config files for navigation, content, etc.
+│   ├── data/            # Type definitions
+│   ├── layout/          # Main layout component
+│   ├── navigation/      # Navigation items
+│   └── pages/           # Page components
+├── index.html           # Main HTML file
+├── package.json         # Project metadata and scripts
+├── vite.config.ts       # Vite configuration
+└── README.md            # Project documentation
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### Deployment
+This project is ready for deployment on platforms like [Vercel](https://vercel.com/) or [Netlify](https://www.netlify.com/). See `vercel.json` for Vercel configuration.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Contributing
+Feel free to fork the repo, create issues, or submit pull requests. Contributions are welcome!
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## License
+This project is licensed under the MIT License.
+
+---
+For any questions or support, please contact the maintainer or open an issue on GitHub.
