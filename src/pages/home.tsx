@@ -28,13 +28,13 @@ const HomePage = () => {
       <div className="flex flex-col justify-between items-center w-5/6 lg:w-1/2 mx-auto">
         <div className="">
           <h1 className="text-4xl text-center font-bold">
-            Find the outstanding IT services from us to be a smarter
+            Find the outstanding IT services from us to be smarter
           </h1>
         </div>
         <div className="mt-4 font-medium">
           <p className="text-center">
-            Volt is one of the best online IT solution and services to make a
-            brilliant idea and makes the best online services and solution
+            Volt is one of the best online IT solution and services to make an idea
+            brilliant and makes the best online services and solution
           </p>
         </div>
 
