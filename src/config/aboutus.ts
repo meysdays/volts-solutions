@@ -23,18 +23,18 @@ export const milestones: Milestone[] = [
 
 export const team: TeamMember[] = [
   {
-    name: "Elena Vance",
+    name: "Victor Igbokwe",
     role: "Founder & CEO",
     imageUrl: img1,
   },
   {
-    name: "Sarah Jenkins",
+    name: "Prince Igbokwe",
     role: "Lead Engineer",
     imageUrl: img3,
 
   },
   {
-    name: "Marcus Thorne",
+    name: "Igbokwe",
     role: "Head of Design",
     imageUrl: img2, 
   },

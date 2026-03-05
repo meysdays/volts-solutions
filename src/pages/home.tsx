@@ -50,7 +50,7 @@ const HomePage = () => {
         </div>
       </div>
 
-      <div className="mt-6 font-medium tracking-wider lg:text-2xl lg:w-2/6">
+      <div className="my-6 font-medium tracking-wider lg:text-2xl lg:w-2/6">
         <p>
           Project Volt empowers organizations with next-generation cloud,
           cybersecurity, and AI solutions. We design high-performance digital

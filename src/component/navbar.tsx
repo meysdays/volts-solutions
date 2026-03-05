@@ -3,13 +3,18 @@ import { navItems } from "../config/navbar";
 import NavItem from "../navigation/NavItem";
 import menu from "../assets/images/Menu.png";
 import logo from "../assets/images/volt.png";
+import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const navigate = useNavigate();
   return (
     <div>
       <div className="flex items-center px-2 lg:px-12 py-4">
-        <div className="w-34 h-20 relative top-2">
+        <div
+          onClick={() => navigate("/home")}
+          className="w-22 h-20  relative top-2"
+        >
           <img src={logo} alt="Logo" className="w-full h-full object-cover" />
           {/* <h3>Volt</h3> */}
         </div>
