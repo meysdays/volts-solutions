@@ -10,10 +10,7 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row mb-8">
           <div className="mb-6 md:w-1/7">
           <img src={logo} alt="" />
-            <p className="text-[18px] leading-8 font-medium tracking-wide">
-              Bringing the authentic flavors of Nigerian home cooking to your
-              table, with passion and care.
-            </p>
+            
           </div>
 
           <div className="flex flex-wrap gap-10 md:w-4/6 mx-auto justify-between">
