@@ -12,8 +12,8 @@ const Navbar = () => {
     <div>
       <div className="flex items-center px-2 lg:px-12 py-4">
         <div
-          onClick={() => navigate("/home")}
-          className="w-22 h-20  relative top-2"
+          onClick={() => navigate("/")}
+          className="w-22 h-20  relative top-2 cursor-pointer"
         >
           <img src={logo} alt="Logo" className="w-full h-full object-cover" />
           {/* <h3>Volt</h3> */}
