@@ -18,7 +18,7 @@ const Navbar = () => {
           <img src={logo} alt="Logo" className="w-full h-full object-cover" />
           {/* <h3>Volt</h3> */}
         </div>
-        <div className="flex-1 mx-8 p-2.5">
+        <div className="flex-1 mx-8 p-2.5 text-md font-medium">
           <div className="hidden md:flex ">
             {navItems.map((item) => (
               <NavItem key={item.path} item={item} />

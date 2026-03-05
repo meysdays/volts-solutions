@@ -5,7 +5,7 @@ import logo from "../assets/images/volt.png";
 
 const Footer = () => {
   return (
-    <div className="bg-brand-yellow text-white py-16">
+    <div className="bg-brand-yellow text-gray-500 py-16">
       <div className="w-9/10 mx-auto">
         <div className="flex flex-col md:flex-row mb-8">
           <div className="mb-6 md:w-1/7">
@@ -22,7 +22,7 @@ const Footer = () => {
                   {section.children.map((item) => (
                     <li key={item.name}>
                       {item.path ? (
-                        <a href={item.path} className="hover:text-gray-500">
+                        <a href={item.path} className="hover:text-white">
                           {item.name}
                         </a>
                       ) : (
